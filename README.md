@@ -1,1 +1,1 @@
-# smart-contract-hotmoka
+# NFTLab smart contract in Hotmoka
