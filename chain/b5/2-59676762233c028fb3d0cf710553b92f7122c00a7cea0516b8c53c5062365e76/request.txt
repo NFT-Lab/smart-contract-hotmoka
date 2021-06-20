@@ -1,0 +1,13 @@
+ConstructorCallTransactionRequest:
+  caller: 541657c63e9d85be566157b0d5b1514c9ddc00296f8b97bdce3b5258e949a49f#2
+  nonce: 2
+  gas limit: 800000
+  gas price: 2
+  class path: 97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e
+  chainId: test
+  constructor: io.takamaka.code.lang.ExternallyOwnedAccounts(java.math.BigInteger,java.lang.String,java.lang.String)
+  actuals:
+    1300000000
+    1000000000 100000000 100000000 100000000
+    MCowBQYDK2VwAyEAjb0nuItKI2MUqWfbCBDf3Ot1n+Xw3CwgSqwej0+Bxv8= MCowBQYDK2VwAyEAbt8VMkzuE3fIHz6Vu72ut7UHTCpaVV8TmuPXlVSBVgs= MCowBQYDK2VwAyEAKsiW/a1tZ9MOWsTa63VNMCBrOTfWoBAregmYh5R2Nxw= MCowBQYDK2VwAyEAKX2uQBP2V9CQn9fRcCpL7hub/RX7VeOLUhJlawBa4Kk=
+  signature: 6ab23eb7c510659ae31bfd22941de2250ced87a51392dcfe531f06f9269760827fa9cb58565a875d21e77eeb638793b9cdc006d8ce02f9385a0474c0db06bf09

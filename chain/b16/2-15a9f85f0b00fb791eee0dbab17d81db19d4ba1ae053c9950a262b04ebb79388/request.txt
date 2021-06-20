@@ -1,0 +1,12 @@
+ConstructorCallTransactionRequest:
+  caller: ed8088f69b97383f357df89a56dc1f32a464cd5fba4fe408110849860069ec48#5
+  nonce: 2
+  gas limit: 10000000
+  gas price: 1
+  class path: 985030b8d9577f13f8d15fea5fdaff97298a9b68acf0c6587888c5c34ca9f487
+  chainId: test
+  constructor: io.nfteam.nftlab.nftlabstore.NFTLabStore(java.lang.String,java.lang.String)
+  actuals:
+    NFTLab
+    NFTL
+  signature: e5c2e07f2e2d15ae90816d38027d010d1d5eb7b33e03969921497875eec4cda4a0ff564472dd9287d0de77f06e14850f0fa7c3c255545cf6213734098684a501

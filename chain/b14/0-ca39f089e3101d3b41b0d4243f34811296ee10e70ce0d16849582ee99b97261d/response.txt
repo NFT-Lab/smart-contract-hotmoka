@@ -1,0 +1,61 @@
+ConstructorCallTransactionSuccessfulResponse:
+  gas consumed for CPU execution: 4782
+  gas consumed for RAM allocation: 7352
+  gas consumed for storage consumption: 253179
+  updates:
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#0.class|io.takamaka.code.lang.ExternallyOwnedAccounts|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1.class|io.takamaka.code.util.StorageTreeIntMap|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#2.class|io.takamaka.code.lang.ExternallyOwnedAccount|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#5.class|io.takamaka.code.lang.ExternallyOwnedAccount|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#b.class|io.takamaka.code.lang.ExternallyOwnedAccount|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#e.class|io.takamaka.code.util.StorageTreeIntMap$BlackNode|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#13.class|io.takamaka.code.lang.ExternallyOwnedAccount|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#16.class|io.takamaka.code.util.StorageTreeIntMap$RedNode|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#18.class|io.takamaka.code.util.StorageTreeIntMap$BlackNode|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1a.class|io.takamaka.code.util.StorageTreeIntMap$BlackNode|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#0|io.takamaka.code.lang.Accounts.accounts:io.takamaka.code.util.StorageIntMap|ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1>
+    <541657c63e9d85be566157b0d5b1514c9ddc00296f8b97bdce3b5258e949a49f#2|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|999999999999988300000000>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#0|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#2|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|1000000000>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#5|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|100000000>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#b|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|100000000>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#13|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|100000000>
+    <541657c63e9d85be566157b0d5b1514c9ddc00296f8b97bdce3b5258e949a49f#2|io.takamaka.code.lang.Contract.balanceRed:java.math.BigInteger|999999999999999995224402>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#0|io.takamaka.code.lang.Contract.balanceRed:java.math.BigInteger|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#2|io.takamaka.code.lang.Contract.balanceRed:java.math.BigInteger|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#5|io.takamaka.code.lang.Contract.balanceRed:java.math.BigInteger|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#b|io.takamaka.code.lang.Contract.balanceRed:java.math.BigInteger|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#13|io.takamaka.code.lang.Contract.balanceRed:java.math.BigInteger|0>
+    <541657c63e9d85be566157b0d5b1514c9ddc00296f8b97bdce3b5258e949a49f#2|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|9>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#2|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#5|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#b|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#13|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#2|io.takamaka.code.lang.ExternallyOwnedAccount.publicKey:java.lang.String|"MCowBQYDK2VwAyEAjb0nuItKI2MUqWfbCBDf3Ot1n+Xw3CwgSqwej0+Bxv8=">
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#5|io.takamaka.code.lang.ExternallyOwnedAccount.publicKey:java.lang.String|"MCowBQYDK2VwAyEAbt8VMkzuE3fIHz6Vu72ut7UHTCpaVV8TmuPXlVSBVgs=">
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#b|io.takamaka.code.lang.ExternallyOwnedAccount.publicKey:java.lang.String|"MCowBQYDK2VwAyEAKsiW/a1tZ9MOWsTa63VNMCBrOTfWoBAregmYh5R2Nxw=">
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#13|io.takamaka.code.lang.ExternallyOwnedAccount.publicKey:java.lang.String|"MCowBQYDK2VwAyEAKX2uQBP2V9CQn9fRcCpL7hub/RX7VeOLUhJlawBa4Kk=">
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1|io.takamaka.code.util.StorageTreeIntMap.root:io.takamaka.code.util.StorageTreeIntMap$Node|ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1a>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#e|io.takamaka.code.util.StorageTreeIntMap$Node.key:int|0>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#16|io.takamaka.code.util.StorageTreeIntMap$Node.key:int|2>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#18|io.takamaka.code.util.StorageTreeIntMap$Node.key:int|3>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1a|io.takamaka.code.util.StorageTreeIntMap$Node.key:int|1>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#18|io.takamaka.code.util.StorageTreeIntMap$Node.left:io.takamaka.code.util.StorageTreeIntMap$Node|ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#16>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1a|io.takamaka.code.util.StorageTreeIntMap$Node.left:io.takamaka.code.util.StorageTreeIntMap$Node|ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#e>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#e|io.takamaka.code.util.StorageTreeIntMap$Node.left:io.takamaka.code.util.StorageTreeIntMap$Node|null>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#16|io.takamaka.code.util.StorageTreeIntMap$Node.left:io.takamaka.code.util.StorageTreeIntMap$Node|null>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1a|io.takamaka.code.util.StorageTreeIntMap$Node.right:io.takamaka.code.util.StorageTreeIntMap$Node|ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#18>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#e|io.takamaka.code.util.StorageTreeIntMap$Node.right:io.takamaka.code.util.StorageTreeIntMap$Node|null>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#16|io.takamaka.code.util.StorageTreeIntMap$Node.right:io.takamaka.code.util.StorageTreeIntMap$Node|null>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#18|io.takamaka.code.util.StorageTreeIntMap$Node.right:io.takamaka.code.util.StorageTreeIntMap$Node|null>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#e|io.takamaka.code.util.StorageTreeIntMap$Node.size:int|1>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#16|io.takamaka.code.util.StorageTreeIntMap$Node.size:int|1>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#18|io.takamaka.code.util.StorageTreeIntMap$Node.size:int|2>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1a|io.takamaka.code.util.StorageTreeIntMap$Node.size:int|4>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#e|io.takamaka.code.util.StorageTreeIntMap$Node.value:java.lang.Object|ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#2>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#16|io.takamaka.code.util.StorageTreeIntMap$Node.value:java.lang.Object|ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#b>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#18|io.takamaka.code.util.StorageTreeIntMap$Node.value:java.lang.Object|ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#13>
+    <ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#1a|io.takamaka.code.util.StorageTreeIntMap$Node.value:java.lang.Object|ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#5>
+  new object: ca39f089e3101d3b41b0d4243f34811296ee10e70ce0d16849582ee99b97261d#0
+  events:
+    

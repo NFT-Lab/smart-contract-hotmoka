@@ -1,0 +1,9 @@
+MethodCallTransactionFailedResponse:
+  gas consumed for CPU execution: 444
+  gas consumed for RAM allocation: 1527
+  gas consumed for storage consumption: 18866
+  gas consumed for penalty: 9979163
+  updates:
+    <ed8088f69b97383f357df89a56dc1f32a464cd5fba4fe408110849860069ec48#5|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|82653487>
+    <ed8088f69b97383f357df89a56dc1f32a464cd5fba4fe408110849860069ec48#5|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|6>
+  cause: io.takamaka.code.lang.RequirementViolationException:The token already exists.

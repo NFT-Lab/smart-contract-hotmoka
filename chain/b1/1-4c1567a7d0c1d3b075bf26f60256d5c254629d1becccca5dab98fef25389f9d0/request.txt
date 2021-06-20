@@ -1,0 +1,13 @@
+InstanceMethodCallTransactionRequest:
+  caller: 696eca9b66105aa8dadafd0f210dac911933dd58cfbe215eb14f1e2eedffa5b9#0
+  nonce: 3
+  gas limit: 100000
+  gas price: 1
+  class path: 97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e
+  method: void io.takamaka.code.lang.Gamete.setMaxFaucet(java.math.BigInteger,java.math.BigInteger)
+  actuals:
+    1000000000000000000000000
+    1000000000000000000000000
+  receiver: 696eca9b66105aa8dadafd0f210dac911933dd58cfbe215eb14f1e2eedffa5b9#0
+  chainId: test
+  signature: 49e1ead64c191a509b49893bbbefd88e3224afd52664fc25bc22cda7be7707e84f4c56e09423fc65bdc80eab6e46408b29a4412197e80f16c2886d7d30b1930e

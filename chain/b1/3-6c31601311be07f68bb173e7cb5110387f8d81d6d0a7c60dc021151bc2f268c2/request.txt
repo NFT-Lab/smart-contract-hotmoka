@@ -1,0 +1,13 @@
+InstanceMethodCallTransactionRequest:
+  caller: 696eca9b66105aa8dadafd0f210dac911933dd58cfbe215eb14f1e2eedffa5b9#0
+  nonce: 5
+  gas limit: 200000
+  gas price: 2
+  class path: 97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e
+  method: void io.takamaka.code.lang.Accounts.addRedBalances(java.math.BigInteger,java.lang.String)
+  actuals:
+    1000000000000000000000000
+    1000000000000000000000000
+  receiver: 541657c63e9d85be566157b0d5b1514c9ddc00296f8b97bdce3b5258e949a49f#0
+  chainId: test
+  signature: 2374556acd7a488b14b02c349a902dfc467c0d4419c75270b16286f20323c98805b719b8556c406a0a9b63ca0e85a57f515f71a64fee77aaa75490d41defa80b

@@ -1,0 +1,10 @@
+MethodCallTransactionSuccessfulResponse:
+  gas consumed for CPU execution: 276
+  gas consumed for RAM allocation: 1311
+  gas consumed for storage consumption: 17096
+  updates:
+    <4a4e0c2ee30820852a297b8bbc2c055e268a3ca1045ce0eec85fee05a0a75de3#5|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|92792428>
+    <4a4e0c2ee30820852a297b8bbc2c055e268a3ca1045ce0eec85fee05a0a75de3#5|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|6>
+  returned value: NFTL
+  events:
+    

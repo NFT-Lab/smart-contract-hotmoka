@@ -1,0 +1,11 @@
+ConstructorCallTransactionRequest:
+  caller: 5213c9b9b409634f2c00e712591a3872947a97bbb1e929cc8d26825ab82ac5c6#5
+  nonce: 5
+  gas limit: 500000
+  gas price: 1
+  class path: 97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e
+  chainId: test
+  constructor: io.takamaka.code.math.UnsignedBigInteger(java.lang.String)
+  actuals:
+    0
+  signature: 3ef1ce3b8011cb53c92bc683a60b19230f54af4b59e6892148d69c3612772bba61a809d0a6e9a5e47b0c4a5584fbff0bfd29ac68af988cdcae51ac3d4355ac0c

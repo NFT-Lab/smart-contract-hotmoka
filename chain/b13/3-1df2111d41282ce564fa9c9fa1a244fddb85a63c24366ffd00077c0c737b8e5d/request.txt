@@ -1,0 +1,12 @@
+InstanceMethodCallTransactionRequest:
+  caller: 1997e24cb84258fae2a6e965721b06e958e7c7aa5cb6dbc7ce132a179978936b#5
+  nonce: 6
+  gas limit: 10000000
+  gas price: 1
+  class path: 62cc8f529ba8ee89dd671ae8a10d9ac1149cf07583cfc9f5bdd17a9078078d8d
+  method: io.takamaka.code.math.UnsignedBigInteger io.nfteam.nftlab.nftlabstore.NFTLabStore.getTokenId(java.lang.String)
+  actuals:
+    QmeK3GCfbMzRp3FW3tWZCg5WVZKM52XZrk6WCTLXWwALbq
+  receiver: 9cf602e663193c4c6590eb38810c0f701ac582922553c0b18355f6be6a2b01b0#0
+  chainId: test
+  signature: d4475935c8cbbf630191e4c45e2ad83966486648e4c201132097f47d1601e5b42d0910b35a572378e0f961d08b32012d2e5930e7d4a009936101250f3909190d

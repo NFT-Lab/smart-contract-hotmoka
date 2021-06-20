@@ -1,0 +1,9 @@
+MethodCallTransactionFailedResponse:
+  gas consumed for CPU execution: 366
+  gas consumed for RAM allocation: 1435
+  gas consumed for storage consumption: 24318
+  gas consumed for penalty: 9973881
+  updates:
+    <f1b658a69545e2080af103ddec68eea49801dc78e7905419a3dcfaa5a818d4aa#13|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|90000000>
+    <f1b658a69545e2080af103ddec68eea49801dc78e7905419a3dcfaa5a818d4aa#13|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|1>
+  cause: io.takamaka.code.lang.RequirementViolationException:Only owner can do this operation.

@@ -1,0 +1,17 @@
+VoidMethodCallTransactionSuccessfulResponse:
+  gas consumed for CPU execution: 714
+  gas consumed for RAM allocation: 1652
+  gas consumed for storage consumption: 10179
+  updates:
+    <a2fe8fbdda4241dfed3ad521e295d022c221ecf88d2b847d3b920e7c4022e873#0.class|io.takamaka.code.governance.GasPriceUpdate|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#1|io.takamaka.code.governance.AbstractValidators.height:java.math.BigInteger|1>
+    <79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#1|io.takamaka.code.governance.AbstractValidators.numberOfTransactions:java.math.BigInteger|9>
+    <a2fe8fbdda4241dfed3ad521e295d022c221ecf88d2b847d3b920e7c4022e873#0|io.takamaka.code.governance.GasPriceUpdate.newGasPrice:java.math.BigInteger|88>
+    <79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#c|io.takamaka.code.governance.GenericGasStation.gasPrice:java.math.BigInteger|88>
+    <79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#c|io.takamaka.code.governance.GenericGasStation.pastGasConsumedWeighted:java.math.BigInteger|661485375000>
+    <79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#c|io.takamaka.code.governance.GenericGasStation.remainder:java.math.BigInteger|198050000000>
+    <79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#1|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|246368>
+    <a2fe8fbdda4241dfed3ad521e295d022c221ecf88d2b847d3b920e7c4022e873#0|io.takamaka.code.lang.Event.creator:io.takamaka.code.lang.Contract|79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#c>
+    <79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#0|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|1>
+  events:
+    a2fe8fbdda4241dfed3ad521e295d022c221ecf88d2b847d3b920e7c4022e873#0

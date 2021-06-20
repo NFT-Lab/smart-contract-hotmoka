@@ -1,0 +1,12 @@
+ConstructorCallTransactionSuccessfulResponse:
+  gas consumed for CPU execution: 290
+  gas consumed for RAM allocation: 1220
+  gas consumed for storage consumption: 23692
+  updates:
+    <be2a292052fbf70a015c71b0be7553f36bd4e95ec95856b085bb9382c9a87b64#0.class|io.takamaka.code.math.UnsignedBigInteger|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <e60fcb8604494251eaa8d12b6bdd89fc23e66454c024c1ec99d57c44fac456c5#5|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|92998445>
+    <e60fcb8604494251eaa8d12b6bdd89fc23e66454c024c1ec99d57c44fac456c5#5|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|4>
+    <be2a292052fbf70a015c71b0be7553f36bd4e95ec95856b085bb9382c9a87b64#0|io.takamaka.code.math.UnsignedBigInteger.value:java.math.BigInteger|0>
+  new object: be2a292052fbf70a015c71b0be7553f36bd4e95ec95856b085bb9382c9a87b64#0
+  events:
+    

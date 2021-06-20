@@ -1,0 +1,9 @@
+MethodCallTransactionFailedResponse:
+  gas consumed for CPU execution: 338
+  gas consumed for RAM allocation: 1419
+  gas consumed for storage consumption: 13264
+  gas consumed for penalty: 9984979
+  updates:
+    <da10eac6cc94bb44a93a3b0731204a163e4556f0d578f47f05e233a7d8914720#5|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|83023647>
+    <da10eac6cc94bb44a93a3b0731204a163e4556f0d578f47f05e233a7d8914720#5|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|4>
+  cause: io.takamaka.code.lang.RequirementViolationException:Unable to get the ID of a non-existent NFT.

@@ -1,0 +1,15 @@
+ConstructorCallTransactionSuccessfulResponse:
+  gas consumed for CPU execution: 299
+  gas consumed for RAM allocation: 1327
+  gas consumed for storage consumption: 47497
+  updates:
+    <2e6335236cc37486720d461399e0f1b81e549953f94a4e22c380993c136b4f43#0.class|io.nfteam.nftlab.nftlabstore.NFTLab|@b92e77c6958820f3a9be718447fbb23023005f25a88dfe324fe3aae9b20618c1>
+    <2e6335236cc37486720d461399e0f1b81e549953f94a4e22c380993c136b4f43#0|io.nfteam.nftlab.nftlabstore.NFTLab.artist:io.takamaka.code.lang.Contract|8cf40156e1f3cd1241de5acc20f84029ba33a37a0584528ebf41601c36e0cfc0#b>
+    <2e6335236cc37486720d461399e0f1b81e549953f94a4e22c380993c136b4f43#0|io.nfteam.nftlab.nftlabstore.NFTLab.artistId:io.takamaka.code.math.UnsignedBigInteger|07ca9b1ce08641de568f34e1521d15f64e5a0e9bcbb49c6fca408ab5155f8fce#0>
+    <2e6335236cc37486720d461399e0f1b81e549953f94a4e22c380993c136b4f43#0|io.nfteam.nftlab.nftlabstore.NFTLab.hash:java.lang.String|"QmeK3GCfbMzRp3FW3tWZCg5WVZKM52XZrk6WCTLXWwALbq">
+    <2e6335236cc37486720d461399e0f1b81e549953f94a4e22c380993c136b4f43#0|io.nfteam.nftlab.nftlabstore.NFTLab.timestamp:java.lang.String|"2019">
+    <8cf40156e1f3cd1241de5acc20f84029ba33a37a0584528ebf41601c36e0cfc0#5|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|93143175>
+    <8cf40156e1f3cd1241de5acc20f84029ba33a37a0584528ebf41601c36e0cfc0#5|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|4>
+  new object: 2e6335236cc37486720d461399e0f1b81e549953f94a4e22c380993c136b4f43#0
+  events:
+    

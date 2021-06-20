@@ -1,0 +1,11 @@
+VoidMethodCallTransactionSuccessfulResponse:
+  gas consumed for CPU execution: 330
+  gas consumed for RAM allocation: 1200
+  gas consumed for storage consumption: 9839
+  updates:
+    <696eca9b66105aa8dadafd0f210dac911933dd58cfbe215eb14f1e2eedffa5b9#0|io.takamaka.code.lang.Contract.balanceRed:java.math.BigInteger|9999999999999999999988631>
+    <696eca9b66105aa8dadafd0f210dac911933dd58cfbe215eb14f1e2eedffa5b9#0|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|4>
+    <696eca9b66105aa8dadafd0f210dac911933dd58cfbe215eb14f1e2eedffa5b9#0|io.takamaka.code.lang.Gamete.maxFaucet:java.math.BigInteger|1000000000000000000000000>
+    <696eca9b66105aa8dadafd0f210dac911933dd58cfbe215eb14f1e2eedffa5b9#0|io.takamaka.code.lang.Gamete.maxRedFaucet:java.math.BigInteger|1000000000000000000000000>
+  events:
+    

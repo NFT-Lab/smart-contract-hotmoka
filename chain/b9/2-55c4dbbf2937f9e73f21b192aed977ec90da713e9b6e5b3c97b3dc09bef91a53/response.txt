@@ -1,0 +1,9 @@
+MethodCallTransactionFailedResponse:
+  gas consumed for CPU execution: 346
+  gas consumed for RAM allocation: 1431
+  gas consumed for storage consumption: 12514
+  gas consumed for penalty: 9985709
+  updates:
+    <6c4fa5b3c559a34b907ca9b638b6875bfdbba9577fd076f7bcc3dcafc8cba658#5|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|82998445>
+    <6c4fa5b3c559a34b907ca9b638b6875bfdbba9577fd076f7bcc3dcafc8cba658#5|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|5>
+  cause: io.takamaka.code.lang.RequirementViolationException:Unable to get the history of a non-existent NFT.

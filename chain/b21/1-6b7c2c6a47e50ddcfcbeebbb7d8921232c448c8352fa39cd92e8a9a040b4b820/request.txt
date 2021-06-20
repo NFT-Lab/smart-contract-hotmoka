@@ -1,0 +1,17 @@
+ConstructorCallTransactionRequest:
+  caller: 5213c9b9b409634f2c00e712591a3872947a97bbb1e929cc8d26825ab82ac5c6#5
+  nonce: 6
+  gas limit: 500000
+  gas price: 1
+  class path: 5da1650feea9d1c49035345c4b25434056e7ecaf100f38fdc5b187e98f589d45
+  chainId: test
+  constructor: io.nfteam.nftlab.nftlabstore.NFTTransaction(io.takamaka.code.math.UnsignedBigInteger,io.takamaka.code.lang.Contract,io.takamaka.code.math.UnsignedBigInteger,io.takamaka.code.lang.Contract,io.takamaka.code.math.UnsignedBigInteger,java.lang.String,java.lang.String)
+  actuals:
+    2b14dd4c9e276c7aa46e64f61367994a861980ee67236119ac5e582afa65860d#0
+    5213c9b9b409634f2c00e712591a3872947a97bbb1e929cc8d26825ab82ac5c6#b
+    adf1c6731126bb8c12a6e8c516d28065983628068c699041904a0f9fd0ce6f73#0
+    5213c9b9b409634f2c00e712591a3872947a97bbb1e929cc8d26825ab82ac5c6#13
+    34f7aaa55598cad71bd87140790add4fa6ad5440f5b42dc27280a1dd94ffb732#0
+    QmeK3GCfbMzRp3FW3tWZCg5WVZKM52XZrk6WCTLXWwALbq
+    2020
+  signature: 374f6537a4114079ae54558cf8dde1939f7cf0aea88364e87f3f74234ff634a6febb31ac03f1913ed206282bfc57d5ef26f6c9f489db499a33310d25f6df7209

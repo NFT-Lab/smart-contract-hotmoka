@@ -1,0 +1,50 @@
+ConstructorCallTransactionSuccessfulResponse:
+  gas consumed for CPU execution: 767
+  gas consumed for RAM allocation: 2095
+  gas consumed for storage consumption: 190991
+  updates:
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0.class|io.nfteam.nftlab.nftlabstore.NFTLabStore|@222544b45dada55945c8390cfd0eb42a1e9ffe1d9211b47752e079540726ef56>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#1.class|io.takamaka.code.math.UnsignedBigInteger|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#2.class|io.takamaka.code.math.UnsignedBigInteger|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#3.class|io.takamaka.code.util.StorageTreeMap|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#4.class|io.takamaka.code.util.StorageTreeMap|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#5.class|io.takamaka.code.util.StorageTreeMap|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#6.class|io.takamaka.code.util.StorageTreeMap|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#7.class|io.takamaka.code.util.StorageTreeMap|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#8.class|io.takamaka.code.math.UnsignedBigInteger|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#9.class|io.takamaka.code.util.StorageTreeMap|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#a.class|io.takamaka.code.util.StorageTreeMap|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#b.class|io.takamaka.code.util.StorageTreeMap|@97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.ERC721.ONE:io.takamaka.code.math.UnsignedBigInteger|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#2>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.ERC721.ZERO:io.takamaka.code.math.UnsignedBigInteger|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#1>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.ERC721.balances:io.takamaka.code.util.StorageMap|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#4>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.ERC721.generateEvents:boolean|true>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.ERC721.name:java.lang.String|"NFTLab">
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.ERC721.operatorApprovals:io.takamaka.code.util.StorageMap|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#6>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.ERC721.owners:io.takamaka.code.util.StorageMap|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#3>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.ERC721.symbol:java.lang.String|"NFTL">
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.ERC721.tokenApprovals:io.takamaka.code.util.StorageMap|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#5>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.hotmoka.erc721_custom.extensions.ERC721URIStorage.tokenURIs:io.takamaka.code.util.StorageMap|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#7>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.nftlabstore.NFTLabStore.hashToId:io.takamaka.code.util.StorageMap|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#a>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.nftlabstore.NFTLabStore.history:io.takamaka.code.util.StorageMap|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#b>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.nftlabstore.NFTLabStore.nfts:io.takamaka.code.util.StorageMap|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#9>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.nftlabstore.NFTLabStore.owner:io.takamaka.code.lang.Contract|4a4e0c2ee30820852a297b8bbc2c055e268a3ca1045ce0eec85fee05a0a75de3#5>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.nfteam.nftlab.nftlabstore.NFTLabStore.tokenId:io.takamaka.code.math.UnsignedBigInteger|a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#8>
+    <4a4e0c2ee30820852a297b8bbc2c055e268a3ca1045ce0eec85fee05a0a75de3#5|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|93023647>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|0>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0|io.takamaka.code.lang.Contract.balanceRed:java.math.BigInteger|0>
+    <4a4e0c2ee30820852a297b8bbc2c055e268a3ca1045ce0eec85fee05a0a75de3#5|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|3>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#1|io.takamaka.code.math.UnsignedBigInteger.value:java.math.BigInteger|0>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#2|io.takamaka.code.math.UnsignedBigInteger.value:java.math.BigInteger|1>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#8|io.takamaka.code.math.UnsignedBigInteger.value:java.math.BigInteger|1>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#3|io.takamaka.code.util.StorageTreeMap.root:io.takamaka.code.util.StorageTreeMap$Node|null>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#4|io.takamaka.code.util.StorageTreeMap.root:io.takamaka.code.util.StorageTreeMap$Node|null>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#5|io.takamaka.code.util.StorageTreeMap.root:io.takamaka.code.util.StorageTreeMap$Node|null>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#6|io.takamaka.code.util.StorageTreeMap.root:io.takamaka.code.util.StorageTreeMap$Node|null>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#7|io.takamaka.code.util.StorageTreeMap.root:io.takamaka.code.util.StorageTreeMap$Node|null>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#9|io.takamaka.code.util.StorageTreeMap.root:io.takamaka.code.util.StorageTreeMap$Node|null>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#a|io.takamaka.code.util.StorageTreeMap.root:io.takamaka.code.util.StorageTreeMap$Node|null>
+    <a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#b|io.takamaka.code.util.StorageTreeMap.root:io.takamaka.code.util.StorageTreeMap$Node|null>
+  new object: a2740bc804134961ff89f3e32d7a394173a34b9c294b699bac6e18ec36e03fd5#0
+  events:
+    

@@ -1,0 +1,18 @@
+ConstructorCallTransactionSuccessfulResponse:
+  gas consumed for CPU execution: 314
+  gas consumed for RAM allocation: 1327
+  gas consumed for storage consumption: 74051
+  updates:
+    <820ee569ec3a0b6c8bf5191a297061b4eb315c7e3eaf45cc7654c426f8e95952#0.class|io.nfteam.nftlab.nftlabstore.NFTTransaction|@a97184bbaf4ce7c9b828706106ed2733e72cb2fe39c845d08c8335d2a5b9fe64>
+    <820ee569ec3a0b6c8bf5191a297061b4eb315c7e3eaf45cc7654c426f8e95952#0|io.nfteam.nftlab.nftlabstore.NFTTransaction.buyer:io.takamaka.code.lang.Contract|a22171b5ed0fecaf84ae40381199804adfd3cff009eb710a0c5aacb9cec0ee95#13>
+    <820ee569ec3a0b6c8bf5191a297061b4eb315c7e3eaf45cc7654c426f8e95952#0|io.nfteam.nftlab.nftlabstore.NFTTransaction.buyerId:io.takamaka.code.math.UnsignedBigInteger|2ae927130c92bab609495513846ce7424d8aed903944197ad1183f434d8b38dc#0>
+    <820ee569ec3a0b6c8bf5191a297061b4eb315c7e3eaf45cc7654c426f8e95952#0|io.nfteam.nftlab.nftlabstore.NFTTransaction.price:java.lang.String|"QmeK3GCfbMzRp3FW3tWZCg5WVZKM52XZrk6WCTLXWwALbq">
+    <820ee569ec3a0b6c8bf5191a297061b4eb315c7e3eaf45cc7654c426f8e95952#0|io.nfteam.nftlab.nftlabstore.NFTTransaction.seller:io.takamaka.code.lang.Contract|a22171b5ed0fecaf84ae40381199804adfd3cff009eb710a0c5aacb9cec0ee95#b>
+    <820ee569ec3a0b6c8bf5191a297061b4eb315c7e3eaf45cc7654c426f8e95952#0|io.nfteam.nftlab.nftlabstore.NFTTransaction.sellerId:io.takamaka.code.math.UnsignedBigInteger|ee2450f5a1c2891b00445887806a90bfa83fc2239a3cb3a806a69ec643bc553b#0>
+    <820ee569ec3a0b6c8bf5191a297061b4eb315c7e3eaf45cc7654c426f8e95952#0|io.nfteam.nftlab.nftlabstore.NFTTransaction.timestamp:java.lang.String|"2020">
+    <820ee569ec3a0b6c8bf5191a297061b4eb315c7e3eaf45cc7654c426f8e95952#0|io.nfteam.nftlab.nftlabstore.NFTTransaction.tokenId:io.takamaka.code.math.UnsignedBigInteger|1a05d2e10962fe193b0a93792ab8d43831da1e319ac406cf82981f00eaf83f52#0>
+    <a22171b5ed0fecaf84ae40381199804adfd3cff009eb710a0c5aacb9cec0ee95#5|io.takamaka.code.lang.Contract.balance:java.math.BigInteger|93066202>
+    <a22171b5ed0fecaf84ae40381199804adfd3cff009eb710a0c5aacb9cec0ee95#5|io.takamaka.code.lang.ExternallyOwnedAccount.nonce:java.math.BigInteger|6>
+  new object: 820ee569ec3a0b6c8bf5191a297061b4eb315c7e3eaf45cc7654c426f8e95952#0
+  events:
+    

@@ -1,0 +1,13 @@
+InstanceSystemMethodCallTransactionRequest:
+  caller: 79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#0
+  nonce: 0
+  gas limit: 100000
+  class path: 97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e
+  receiver: 79596468d95a4451497236b63e91366d1f010fd4cff808c36378050903533d84#1
+  method: void io.takamaka.code.governance.Validators.reward(java.math.BigInteger,java.lang.String,java.lang.String,java.math.BigInteger,java.math.BigInteger)
+  actuals:
+    246368
+    
+    
+    527922
+    9
