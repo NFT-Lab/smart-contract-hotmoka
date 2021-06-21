@@ -19,6 +19,32 @@ jobs:
           java-version: '16.0.1'
           distribution: 'adopt-hotspot'
           check-latest: true
+          
+      - name: Generate settings.xml for Maven Builds
+        uses: whelk-io/maven-settings-xml-action@v18
+        with: 
+          repositories: >
+            [
+              {
+                "id": "central",
+                "url": "https://repo1.maven.org/maven2"
+              },
+              {
+                "id": "github",
+                "url": "https://maven.pkg.github.com/NFT-Lab/*",
+                "snapshots": {
+                  "enabled": "false"
+                }
+              }
+            ]
+          servers: >
+            [
+              {
+                "id": "github",
+                "username": "FilippoFantinato",
+                "password": ${{ secrets.ACCESS_TOKEN }}
+              }
+            ]
 
       - name: Cache Maven packages
         uses: actions/cache@v2
