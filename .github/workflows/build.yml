@@ -30,6 +30,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           name: Hotmoka/Hotmoka
+          path: './hotmoka'
           
       - name: Install Hotmoka
         run: mvn install
