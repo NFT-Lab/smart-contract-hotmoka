@@ -16,14 +16,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
 import java.security.SignatureException;
 
 import static io.hotmoka.beans.Coin.*;
-import static io.hotmoka.beans.Coin.panarea;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class NFTLabTest extends TakamakaTest {
@@ -53,9 +50,6 @@ class NFTLabTest extends TakamakaTest {
         creator_prv_key = privateKey(1);
 
         GasHelper gasHelper = new GasHelper(node);
-        Path erc721Code = Paths.get(
-                System.getProperty("user.home") + "/.m2/repository/io/nfteam/nftlab/hotmoka-erc721-custom/0.1/hotmoka-erc721-custom-0.1.jar"
-        );
 
         TransactionReference erc721Ref = addJarStoreTransaction(
                 creator_prv_key,
@@ -63,12 +57,8 @@ class NFTLabTest extends TakamakaTest {
                 _10_000_000,
                 gasHelper.getSafeGasPrice(),
                 node.getTakamakaCode(),
-                Files.readAllBytes(erc721Code),
+                Files.readAllBytes(erc721CodePath),
                 node.getTakamakaCode());
-
-        Path smartContractCode = Paths.get(
-                "./target/smart-contract-hotmoka-1.0.jar"
-        );
 
         classpath = addJarStoreTransaction(
                 creator_prv_key,
@@ -76,7 +66,7 @@ class NFTLabTest extends TakamakaTest {
                 _10_000_000,
                 gasHelper.getSafeGasPrice(),
                 node.getTakamakaCode(),
-                Files.readAllBytes(smartContractCode),
+                Files.readAllBytes(smartContractCodePath),
                 erc721Ref);
     }
 

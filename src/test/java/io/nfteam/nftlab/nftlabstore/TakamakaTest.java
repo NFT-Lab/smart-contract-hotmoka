@@ -86,6 +86,14 @@ public abstract class TakamakaTest {
 	protected static final BigInteger _1_000_000_000 = BigInteger.valueOf(1_000_000_000);
 	protected static final BigInteger _10_000_000_000 = BigInteger.valueOf(10_000_000_000L);
 
+	protected final Path erc721CodePath = Paths.get(
+			System.getProperty("user.home") + "/.m2/repository/io/nfteam/nftlab/hotmoka-erc721-customized/0.1/hotmoka-erc721-customized-0.1.jar"
+	);
+
+	protected final Path smartContractCodePath = Paths.get(
+			"./target/smart-contract-hotmoka-1.0.jar"
+	);
+
 	/**
 	 * The node that gets created before starting running the tests.
 	 * This node will hence be created only once and

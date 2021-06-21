@@ -1,5 +1,0 @@
-GameteCreationTransactionRequest:
-  class path: 97e24f755784f8b998897060538209095a8860bbc6f0e6fd7697837cc7fa3d3e
-  initialAmount: 10000000000000000000000000
-  redInitialAmount: 10000000000000000000000000
-  publicKey: MCowBQYDK2VwAyEAPPbKrwOOHWWy3bxie8Zn6XVb3byh3LRKxdTLOPudZ0c=

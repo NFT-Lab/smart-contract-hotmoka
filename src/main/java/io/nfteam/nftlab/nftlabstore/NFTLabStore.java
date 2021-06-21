@@ -1,6 +1,6 @@
 package io.nfteam.nftlab.nftlabstore;
 
-import io.nfteam.nftlab.hotmoka.erc721_custom.extensions.ERC721URIStorage;
+import io.nfteam.nftlab.hotmoka.erc721_customized.extensions.ERC721URIStorage;
 import io.takamaka.code.lang.*;
 import io.takamaka.code.math.UnsignedBigInteger;
 import io.takamaka.code.util.StorageLinkedList;
