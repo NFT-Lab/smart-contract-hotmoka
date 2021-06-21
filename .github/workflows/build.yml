@@ -33,7 +33,9 @@ jobs:
           path: './hotmoka'
           
       - name: Install Hotmoka
-        run: mvn install
+        run: |
+          cd ./hotmoka
+          mvn install
         
       - uses: actions/checkout@v2
       
