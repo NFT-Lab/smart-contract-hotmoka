@@ -141,7 +141,7 @@ fabric.properties
 .idea/codestream.xml
 
 ### Takamaka tests """
-#/chain/
+/chain/
 *.tex
 *.pdf
 *.aux
