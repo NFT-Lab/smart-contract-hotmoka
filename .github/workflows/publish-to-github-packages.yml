@@ -39,7 +39,7 @@ jobs:
               {
                 "id": "github",
                 "username": "FilippoFantinato",
-                "password": "${{ secrets.ACCESS_TOKEN }}"
+                "password": "${{ secrets.GITHUB_TOKEN }}"
               }
             ]
             
