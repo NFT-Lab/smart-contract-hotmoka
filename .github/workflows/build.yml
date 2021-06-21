@@ -34,8 +34,7 @@ jobs:
           
       - name: Install Hotmoka
         run: |
-          cd ./hotmoka
-          mvn install
+          mvn install -f ./hotmoka/pom.xml
         
       - uses: actions/checkout@v2
       
