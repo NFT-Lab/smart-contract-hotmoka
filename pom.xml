@@ -17,16 +17,85 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.6.2</version>
-            <scope>test</scope>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-constants</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-whitelisting</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-verification</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-instrumentation</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-beans</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-crypto</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-nodes</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-views</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-memory</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-tendermint</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-takamaka</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-service</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.hotmoka</groupId>
+            <artifactId>io-hotmoka-remote</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.6.2</version>
+            <version>5.4.2</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-commons</artifactId>
+            <version>1.5.2</version>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
@@ -44,6 +113,11 @@
             <artifactId>io-takamaka-code</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>io.nfteam.nftlab</groupId>
+            <artifactId>hotmoka-erc721-customized</artifactId>
+            <version>0.1</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -52,11 +126,6 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.7</version>
-                <configuration>
-                    <excludes>
-                        <exclude>io/nfteam/nftlab/contracts/**/*</exclude>
-                    </excludes>
-                </configuration>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
@@ -92,6 +161,14 @@
                 <version>3.8.1</version>
                 <configuration>
                     <release>11</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <argLine>${surefireArgLine} -Xmx1024m</argLine>
                 </configuration>
             </plugin>
         </plugins>
