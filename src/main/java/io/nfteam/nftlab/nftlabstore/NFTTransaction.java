@@ -7,13 +7,13 @@ import io.takamaka.code.lang.View;
 import java.math.BigInteger;
 
 public final class NFTTransaction extends Storage {
-    public final BigInteger tokenId;
-    public final Contract seller;
-    public final BigInteger sellerId;
-    public final Contract buyer;
-    public final BigInteger buyerId;
-    public final String price;
-    public final String timestamp;
+    private final BigInteger tokenId;
+    private final Contract seller;
+    private final BigInteger sellerId;
+    private final Contract buyer;
+    private final BigInteger buyerId;
+    private final String price;
+    private final String timestamp;
 
     public NFTTransaction(BigInteger tokenId, Contract seller, BigInteger sellerId, Contract buyer, BigInteger buyerId, String price, String timestamp) {
         this.tokenId = tokenId;
@@ -26,25 +26,25 @@ public final class NFTTransaction extends Storage {
     }
 
     @View
-    public BigInteger getTokenId() { return tokenId; };
+    public BigInteger getTokenId() { return tokenId; }
 
     @View
-    public Contract getSeller() { return seller; };
+    public Contract getSeller() { return seller; }
 
     @View
-    public BigInteger getSellerId() { return sellerId; };
+    public BigInteger getSellerId() { return sellerId; }
 
     @View
-    public Contract getBuyer() { return buyer; };
+    public Contract getBuyer() { return buyer; }
 
     @View
-    public BigInteger getBuyerId() { return buyerId; };
+    public BigInteger getBuyerId() { return buyerId; }
 
     @View
-    public String getPrice() { return price; };
+    public String getPrice() { return price; }
 
     @View
-    public String getTimestamp() { return timestamp; };
+    public String getTimestamp() { return timestamp; }
 
     @Override @View
     public boolean equals(Object o) {
