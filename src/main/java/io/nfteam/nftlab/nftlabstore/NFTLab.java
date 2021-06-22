@@ -3,21 +3,34 @@ package io.nfteam.nftlab.nftlabstore;
 import io.takamaka.code.lang.Contract;
 import io.takamaka.code.lang.Storage;
 import io.takamaka.code.lang.View;
-import io.takamaka.code.math.UnsignedBigInteger;
+
+import java.math.BigInteger;
 
 public final class NFTLab extends Storage
 {
-    public final Contract artist;
-    public final UnsignedBigInteger artistId;
-    public final String hash;
-    public final String timestamp;
+    private final Contract artist;
+    private final BigInteger artistId;
+    private final String hash;
+    private final String timestamp;
 
-    public NFTLab(Contract artist, UnsignedBigInteger artistId, String hash, String timestamp) {
+    public NFTLab(Contract artist, BigInteger artistId, String hash, String timestamp) {
         this.artist = artist;
         this.artistId = artistId;
         this.hash = hash;
         this.timestamp = timestamp;
     }
+
+    @View
+    public Contract getArtist() { return artist; };
+
+    @View
+    public BigInteger getArtistId() { return artistId; };
+
+    @View
+    public String getHash() { return hash; };
+
+    @View
+    public String getTimestamp() { return timestamp; };
 
     @Override @View
     public boolean equals(Object o) {

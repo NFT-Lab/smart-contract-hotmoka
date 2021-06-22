@@ -11,7 +11,7 @@ import java.math.BigInteger;
 
 public class NFTLabStore extends ERC721URIStorage {
     private final Contract owner;
-    private final UnsignedBigInteger tokenId = new UnsignedBigInteger(BigInteger.ONE);
+    private BigInteger tokenId = BigInteger.ONE;
 
     private final StorageMap<UnsignedBigInteger, NFTLab> nfts = new StorageTreeMap<>();
     private final StorageMap<String, UnsignedBigInteger> hashToId = new StorageTreeMap<>();
@@ -24,16 +24,16 @@ public class NFTLabStore extends ERC721URIStorage {
     }
 
     @FromContract
-    public UnsignedBigInteger mint(
+    public BigInteger mint(
             Contract artist,
-            UnsignedBigInteger artistId,
+            BigInteger artistId,
             String hash,
             String timestamp
     ) {
         onlyOwner();
         Takamaka.require(hashToId.get(hash) == null, "The token already exists.");
 
-        UnsignedBigInteger newTokenId = new UnsignedBigInteger(tokenId.toBigInteger());
+        UnsignedBigInteger newTokenId = new UnsignedBigInteger(tokenId);
 
         _safeMint(artist, newTokenId);
         _setTokenURI(newTokenId, hash);
@@ -48,30 +48,32 @@ public class NFTLabStore extends ERC721URIStorage {
 
         approve(owner, newTokenId);
 
-        tokenId.next();
+        tokenId = tokenId.add(BigInteger.ONE);
 
         Takamaka.event(new Minted(artist, hash, timestamp));
 
-        return newTokenId;
+        return newTokenId.toBigInteger();
     }
 
     @FromContract
     public boolean transfer(
-            UnsignedBigInteger tokenId,
+            BigInteger tokenId,
             Contract seller,
-            UnsignedBigInteger sellerId,
+            BigInteger sellerId,
             Contract buyer,
-            UnsignedBigInteger buyerId,
+            BigInteger buyerId,
             String price,
             String timestamp
     ) {
         onlyOwner();
 
-        safeTransferFrom(seller, buyer, tokenId);
+        UnsignedBigInteger tokenIdUBI = new UnsignedBigInteger(tokenId);
 
-        history.putIfAbsent(tokenId, new StorageLinkedList<>());
+        safeTransferFrom(seller, buyer, tokenIdUBI);
 
-        history.get(tokenId).add(new NFTTransaction(
+        history.putIfAbsent(tokenIdUBI, new StorageLinkedList<>());
+
+        history.get(tokenIdUBI).add(new NFTTransaction(
                         tokenId,
                         seller,
                         sellerId,
@@ -93,17 +95,18 @@ public class NFTLabStore extends ERC721URIStorage {
     }
 
     @View
-    public StorageLinkedList<NFTTransaction> getHistory(UnsignedBigInteger tokenId){
-        Takamaka.require(_exists(tokenId), "Unable to get the history of a non-existent NFT.");
+    public StorageLinkedList<NFTTransaction> getHistory(BigInteger tokenId){
+        UnsignedBigInteger tokenIdUBI = new UnsignedBigInteger(tokenId);
+        Takamaka.require(_exists(tokenIdUBI), "Unable to get the history of a non-existent NFT.");
 
-        return history.getOrDefault(tokenId, new StorageLinkedList<NFTTransaction>());
+        return history.getOrDefault(tokenIdUBI, new StorageLinkedList<NFTTransaction>());
     }
 
     @View
-    public UnsignedBigInteger getTokenId(String hash) {
+    public BigInteger getTokenId(String hash) {
         Takamaka.require(hashToId.get(hash) != null, "Unable to get the ID of a non-existent NFT.");
 
-        return hashToId.get(hash);
+        return hashToId.get(hash).toBigInteger();
     }
 
     @View
@@ -114,10 +117,11 @@ public class NFTLabStore extends ERC721URIStorage {
     }
 
     @View
-    public NFTLab getNFTById(UnsignedBigInteger id) {
-        Takamaka.require(_exists(id), "Unable to get a non-existent NFT.");
+    public NFTLab getNFTById(BigInteger tokenId) {
+        UnsignedBigInteger tokenIdUBI = new UnsignedBigInteger(tokenId);
+        Takamaka.require(_exists(tokenIdUBI), "Unable to get a non-existent NFT.");
 
-        return nfts.get(id);
+        return nfts.get(tokenIdUBI);
     }
 
     @Override
@@ -146,14 +150,14 @@ public class NFTLabStore extends ERC721URIStorage {
     }
 
     class Transferred extends Event {
-        public final UnsignedBigInteger tokenId;
+        public final BigInteger tokenId;
         public final Contract seller;
         public final Contract buyer;
         public final String price;
         public final String timestamp;
 
         @FromContract
-        public Transferred(UnsignedBigInteger tokenId, Contract seller, Contract buyer, String price, String timestamp) {
+        public Transferred(BigInteger tokenId, Contract seller, Contract buyer, String price, String timestamp) {
             this.tokenId = tokenId;
             this.seller = seller;
             this.buyer = buyer;

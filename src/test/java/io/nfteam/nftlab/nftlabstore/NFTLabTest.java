@@ -8,6 +8,7 @@ import io.hotmoka.beans.signatures.ConstructorSignature;
 import io.hotmoka.beans.signatures.NonVoidMethodSignature;
 import io.hotmoka.beans.types.BasicTypes;
 import io.hotmoka.beans.types.ClassType;
+import io.hotmoka.beans.values.BigIntegerValue;
 import io.hotmoka.beans.values.BooleanValue;
 import io.hotmoka.beans.values.StorageReference;
 import io.hotmoka.beans.values.StringValue;
@@ -15,33 +16,31 @@ import io.hotmoka.views.GasHelper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.math.BigInteger;
 import java.nio.file.Files;
 import java.security.InvalidKeyException;
 import java.security.PrivateKey;
 import java.security.SignatureException;
 
 import static io.hotmoka.beans.Coin.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class NFTLabTest extends TakamakaTest {
     private static final ClassType NFTLab = new ClassType("io.nfteam.nftlab.nftlabstore.NFTLab");
-    private static final ClassType UBI = ClassType.UNSIGNED_BIG_INTEGER;
-    private static final ConstructorSignature CONSTRUCTOR_NFTLAB_CONTRACT_UBI_STR_STR =
+    private static final ConstructorSignature CONSTRUCTOR_NFTLAB_CONTRACT_BI_STR_STR =
             new ConstructorSignature(
                     NFTLab,
                     ClassType.CONTRACT,
-                    ClassType.UNSIGNED_BIG_INTEGER,
+                    ClassType.BIG_INTEGER,
                     ClassType.STRING,
                     ClassType.STRING
             );
-    private static final ConstructorSignature CONSTRUCTOR_UBI_STR = new ConstructorSignature(UBI, ClassType.STRING);
 
     private TransactionReference classpath;
 
     private StorageReference creator;
     private PrivateKey creator_prv_key;
-
-    private StorageReference nftLabStore;
 
     @BeforeEach
     void beforeEach() throws Exception {
@@ -72,31 +71,93 @@ class NFTLabTest extends TakamakaTest {
 
     @Test
     void constructor() throws TransactionException, TransactionRejectedException, CodeExecutionException, SignatureException, InvalidKeyException {
-        StringValue hash = new StringValue("QmeK3GCfbMzRp3FW3tWZCg5WVZKM52XZrk6WCTLXWwALbq");
-        StringValue timestamp = new StringValue("2019");
+        StringValue expectedHash = new StringValue("QmeK3GCfbMzRp3FW3tWZCg5WVZKM52XZrk6WCTLXWwALbq");
+        StringValue expectedTimestamp = new StringValue("2019");
+        StorageReference expectedArtist = account(2);
 
-        StorageReference artistId = addConstructorCallTransaction(
-                creator_prv_key,
-                creator,
-                _500_000,
-                panarea(1),
-                takamakaCode(),
-                CONSTRUCTOR_UBI_STR,
-                new StringValue("0")
-        );
+        BigIntegerValue expectedArtistId = new BigIntegerValue(BigInteger.ZERO);
 
-        addConstructorCallTransaction(
+        StorageReference nftlab = addConstructorCallTransaction(
                 creator_prv_key,
                 creator,
                 _500_000,
                 panarea(1),
                 classpath,
-                CONSTRUCTOR_NFTLAB_CONTRACT_UBI_STR_STR,
-                account(2),
-                artistId,
-                hash,
-                timestamp
+                CONSTRUCTOR_NFTLAB_CONTRACT_BI_STR_STR,
+                expectedArtist,
+                expectedArtistId,
+                expectedHash,
+                expectedTimestamp
         );
+
+        StorageReference actualArtist = (StorageReference) runInstanceMethodCallTransaction(
+                creator,
+                _500_000,
+                classpath,
+                new NonVoidMethodSignature(
+                        NFTLab,
+                        "getArtist",
+                        ClassType.CONTRACT
+                ),
+                nftlab
+        );
+
+        BigIntegerValue actualArtistId = (BigIntegerValue) runInstanceMethodCallTransaction(
+                creator,
+                _500_000,
+                classpath,
+                new NonVoidMethodSignature(
+                        NFTLab,
+                        "getArtistId",
+                        ClassType.BIG_INTEGER
+                ),
+                nftlab
+        );
+
+        StringValue actualHash = (StringValue) runInstanceMethodCallTransaction(
+                creator,
+                _500_000,
+                classpath,
+                new NonVoidMethodSignature(
+                        NFTLab,
+                        "getHash",
+                        ClassType.STRING
+                ),
+                nftlab
+        );
+
+        StringValue actualTimestamp = (StringValue) runInstanceMethodCallTransaction(
+                creator,
+                _500_000,
+                classpath,
+                new NonVoidMethodSignature(
+                        NFTLab,
+                        "getTimestamp",
+                        ClassType.STRING
+                ),
+                nftlab
+        );
+
+        BooleanValue sameAccount = (BooleanValue) addInstanceMethodCallTransaction(
+                creator_prv_key,
+                creator,
+                _500_000,
+                panarea(1),
+                takamakaCode(),
+                new NonVoidMethodSignature(
+                        ClassType.CONTRACT,
+                        "equals",
+                        BasicTypes.BOOLEAN,
+                        ClassType.OBJECT
+                ),
+                expectedArtist,
+                actualArtist
+        );
+
+        assertTrue(sameAccount.value);
+        assertEquals(expectedArtistId, actualArtistId);
+        assertEquals(expectedHash, actualHash);
+        assertEquals(expectedTimestamp, actualTimestamp);
     }
 
     @Test
@@ -104,15 +165,7 @@ class NFTLabTest extends TakamakaTest {
         StringValue hash = new StringValue("QmeK3GCfbMzRp3FW3tWZCg5WVZKM52XZrk6WCTLXWwALbq");
         StringValue timestamp = new StringValue("2019");
 
-        StorageReference artistId = addConstructorCallTransaction(
-                creator_prv_key,
-                creator,
-                _500_000,
-                panarea(1),
-                takamakaCode(),
-                CONSTRUCTOR_UBI_STR,
-                new StringValue("0")
-        );
+        BigIntegerValue artistId = new BigIntegerValue(BigInteger.ZERO);
 
         StorageReference firstObject = (StorageReference) addConstructorCallTransaction(
                 creator_prv_key,
@@ -120,7 +173,7 @@ class NFTLabTest extends TakamakaTest {
                 _500_000,
                 panarea(1),
                 classpath,
-                CONSTRUCTOR_NFTLAB_CONTRACT_UBI_STR_STR,
+                CONSTRUCTOR_NFTLAB_CONTRACT_BI_STR_STR,
                 account(2),
                 artistId,
                 hash,
@@ -133,7 +186,7 @@ class NFTLabTest extends TakamakaTest {
                 _500_000,
                 panarea(1),
                 classpath,
-                CONSTRUCTOR_NFTLAB_CONTRACT_UBI_STR_STR,
+                CONSTRUCTOR_NFTLAB_CONTRACT_BI_STR_STR,
                 account(2),
                 artistId,
                 hash,
