@@ -36,6 +36,6 @@ jobs:
       - uses: actions/checkout@v2
           
       - name: Publish package
-        run: mvn --batch-mode deploy -DskipTests=true
+        run: mvn --batch-mode deploy -DskipTests=true -X
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
