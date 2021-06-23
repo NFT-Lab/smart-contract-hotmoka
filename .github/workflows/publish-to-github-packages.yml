@@ -59,6 +59,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: Hotmoka/Hotmoka
+          ref: '1.0.0'
           path: './hotmoka'
           
       - name: Install Hotmoka
