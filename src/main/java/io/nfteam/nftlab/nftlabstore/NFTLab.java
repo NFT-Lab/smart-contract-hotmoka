@@ -21,16 +21,16 @@ public final class NFTLab extends Storage
     }
 
     @View
-    public Contract getArtist() { return artist; };
+    public Contract getArtist() { return artist; }
 
     @View
-    public BigInteger getArtistId() { return artistId; };
+    public BigInteger getArtistId() { return artistId; }
 
     @View
-    public String getHash() { return hash; };
+    public String getHash() { return hash; }
 
     @View
-    public String getTimestamp() { return timestamp; };
+    public String getTimestamp() { return timestamp; }
 
     @Override @View
     public boolean equals(Object o) {
