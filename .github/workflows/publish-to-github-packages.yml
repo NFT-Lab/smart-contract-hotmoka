@@ -20,7 +20,11 @@ jobs:
           
       - name: Generate settings.xml for Maven Builds
         uses: whelk-io/maven-settings-xml-action@v18
-        with: 
+        with:
+          active_profiles: >
+            [
+              "github"
+            ]
           repositories: >
             [
               {
