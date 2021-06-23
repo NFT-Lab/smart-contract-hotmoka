@@ -51,6 +51,15 @@ jobs:
               }
             ]
           
+      - uses: actions/checkout@v2
+        with:
+          repository: Hotmoka/Hotmoka
+          path: './hotmoka'
+          
+      - name: Install Hotmoka
+        run: |
+          mvn install -f ./hotmoka/pom.xml --projects io-hotmoka-takamaka    
+      
       - name: Publish package
         run: mvn --batch-mode deploy -DskipTests=true
         env:
