@@ -28,10 +28,7 @@ jobs:
               },
               {
                 "id": "github",
-                "url": "https://maven.pkg.github.com/NFT-Lab/*",
-                "snapshots": {
-                  "enabled": "false"
-                }
+                "url": "https://maven.pkg.github.com/NFT-Lab/*"
               }
             ]
           servers: >
