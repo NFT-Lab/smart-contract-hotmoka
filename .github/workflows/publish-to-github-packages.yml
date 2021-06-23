@@ -13,10 +13,10 @@ jobs:
       
       - uses: actions/setup-java@v2
         with:
-          java-version: '11'
+          java-version: '16.0.1'
           distribution: 'adopt-hotspot'
           check-latest: true
-            
+          
       - name: Cache Maven packages
         uses: actions/cache@v2
         with:
@@ -24,18 +24,7 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
           
-      - uses: actions/checkout@v2
-        with:
-          repository: Hotmoka/Hotmoka
-          path: './hotmoka'
-          
-      - name: Install Hotmoka
-        run: |
-          mvn install -f ./hotmoka/pom.xml --projects io-hotmoka-takamaka
-        
-      - uses: actions/checkout@v2
-          
       - name: Publish package
-        run: mvn --batch-mode deploy -DskipTests=true -X
+        run: mvn --batch-mode deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
