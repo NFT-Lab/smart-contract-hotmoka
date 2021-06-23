@@ -16,6 +16,35 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
           
+      - name: Generate settings.xml for Maven Builds
+        uses: whelk-io/maven-settings-xml-action@v18
+        with: 
+          repositories: >
+            [
+              {
+                "id": "central",
+                "url": "https://repo1.maven.org/maven2"
+              },
+              {
+                "id": "github",
+                "url": "https://maven.pkg.github.com/NFT-Lab/*",
+                "releases": {
+                  "enabled": "true"
+                },
+                "snapshots": {
+                  "enabled": "false"
+                }
+              }
+            ]
+          servers: >
+            [
+              {
+                "id": "github",
+                "username": "FilippoFantinato",
+                "password": "${{ secrets.ACCESS_TOKEN }}"
+              }
+            ]
+          
       - name: Publish package
         run: mvn --batch-mode deploy -DskipTests=true
         env:
