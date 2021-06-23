@@ -41,8 +41,8 @@ jobs:
             [
               {
                 "id": "github",
-                "username": "FilippoFantinato",
-                "password": "${{ secrets.ACCESS_TOKEN }}"
+                "username": "${{ secrets.DEPLOY_USERNAME }}",
+                "password": "${{ secrets.DEPLOY_ACCESS_TOKEN }}"
               }
             ]
 
@@ -62,8 +62,6 @@ jobs:
         run: |
           mvn install -f ./hotmoka/pom.xml --projects io-hotmoka-takamaka
         
-      - uses: actions/checkout@v2
-      
       - name: Package
         run: mvn clean package -DskipTests=true
         
