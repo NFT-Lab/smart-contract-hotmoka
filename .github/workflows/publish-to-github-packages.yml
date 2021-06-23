@@ -44,8 +44,8 @@ jobs:
             [
               {
                 "id": "github",
-                "username": "${{ secrets.GITHUB_DEPLOY_USERNAME }}",
-                "password": "${{ secrets.GITHUB_DEPLOY_ACCESS_TOKEN }}"
+                "username": "${{ secrets.DEPLOY_USERNAME }}",
+                "password": "${{ secrets.DEPLOY_ACCESS_TOKEN }}"
               }
             ]
           
