@@ -8,7 +8,6 @@ La seguente repository contiene lo smart contract per Hotmoka per la gestione de
 
 * **[Maven](https://maven.apache.org/).**
 * **[JUnit5](https://junit.org/junit5/):** libreria per la scrittura di test nel linguaggio java.
-* **[Mockito](https://site.mockito.org/):** libreria per la scrittura di mock utilizzabili ed integrabili con **JUnit5**.
 
 ## Prerequisiti
 
@@ -131,7 +130,7 @@ La classe NFTTransaction consiste in una transazione di un NFT.
 
 ### Test
 
-Tutti i test sono stati implementati attraverso le librerie **Junit5** e **Mockito**. 
+Tutti i test sono stati implementati attraverso la libreria **JUnit5**.
 
 Per aiutare la scrittura dei test in Takamaka è stata utilizzata la classe TakamakaTest, la quale ha il compito di creare un nodo temporaneo e interagire con la blockchain Hotmoka attraverso i seguenti metodi:
 
