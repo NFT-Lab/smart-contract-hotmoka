@@ -55,6 +55,15 @@ La seguente repository contiene lo smart contract per Hotmoka per la gestione de
    ```
 
    In questo modo si permetterà a maven di accedere alla repository maven di github.
+   
+3. Eseguire i seguenti comandi per installare Hotmoka 1.0.0:
+
+   ```bash
+   $ git clone https://github.com/Hotmoka/hotmoka.git
+   $ cd hotmoka
+   $ git checkout 1.0.0
+   $ mvn install
+   ```
 
 ## Organizzazione della repository
 
